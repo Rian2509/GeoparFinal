@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Geopark Ciletuh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+        <!-- Plugin Tambahan -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easybutton.css">
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/plugins/leafletfullscreen/v1.0.1/leaflet.fullscreen.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css">
+        <link rel="stylesheet" href="https://balladaniel.github.io/leaflet-dataclassification/leafletdataclassification.css">
+    
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+        <script src="https://api.mapbox.com/mapbox.js/plugins/leafletfullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+        <script src="https://balladaniel.github.io/leaflet-dataclassification/leafletdataclassification.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+  <header id="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="asset/Sukabumi.png" alt="Logo" width="60">
+        <img src="asset/Unesco.png" alt="Logo" width="60">
+        <img src="asset/Geoo.png" alt="Logo" width="60">
+        <h1>WebGIS Objek Wisata Geopark Ciletuh-Palabuhanratu</h1>
+      </div>
+        <nav>
+        <ul>
+        <li><a href="#hero-section">Beranda</a></li>
+        <li><a href="#map-section">Peta</a></li>
+        <li><a href="#data-section">Informasi</a></li>
+        <li><a href="#author-section">Pembuat</a></li>
+        <li><a href="#footer">Kontak</a></li>
+        </ul>
+        </nav>
+        </div>
+   </header>
+
+  <!-- Hero Section -->
+  <div id="hero-section" class="hero-section">
+    <div class="hero-content">
+      <video autoplay muted loop playsinline class="hero-video">
+      <source src="asset/Geopark Ciletuh.mp4" type="video/mp4">
+      </video>
+    <div class="hero-overlay">
+      <div class="hero-text-container">
+      <h1>WebGIS Objek Wisata Geopark Ciletuh-Palabuhanratu</h1>
+      <p>Halaman untuk Melakukan Eksplorasi Objek Wisata di kawasan Geopark Ciletuh-Palabuhanratu</p>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Map Section -->
+  <div id="map-section">
+    <h2>Peta Objek Wisata Geopark Ciletuh-Palabuhanratu</h2>
+    <iframe src="https://unrivaled-tanuki-f32c76.netlify.app/#11/-6.8825/106.5269" width="1300" height="600" style="border:1px solid #ccc;">
+  </iframe>
+  </div>
+
+  <!-- Data Section -->
+  <div id="data-section">
+    <h2>Objek Wisata Geopark Ciletuh-Palabuhanratu</h2>
+    <div class="container">
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Minajaya.jpg" alt="Surade" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Minajaya</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Karang.jpg" alt="Ciemas" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Karang Gantung</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Waluran.jpg" alt="Waluran" style="width: 100px;">
+          <div class="description">
+            <h3>Desa Wisata Hanjeli</h3>
+
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Pandan.jpg" alt="Simpenan" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Taman Pandan</h3>
+      
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Tenda.webp" alt="Palabuhanratu" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Tenda Biru</h3>
+      
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Ciracap.jpg" alt="Cikakak" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Ujunggenteng</h3>
+      
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Pasir Putih.webp" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Pasir Putih</h3>
+      
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Cibuaya.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Cibuaya</h3>
+      
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Panganten.JPG" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Karang Panganten</h3>
+      
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Ciletuh.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Palangpang</h3>
+      
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Loji.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Loji</h3>
+      
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Palabuhanratuu.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Palabuhanratu</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Citepus.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Citepus</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Karanghawu.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Pantai Karanghawu</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Cigangsa.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Curug Cigangsa</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Luhur.jpeg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Curug Luhur</h3>
+          </div>
+        </div>
+      </div><div class="column">
+        <div class="data-item">
+            <img src="asset/Awang.png" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Curug Awang</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Sodongg.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Curug Sodong</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Cimarinjung.webp" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Curug Cimarinjung</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Wisata.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Curug Cikanteh</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Larangan.jpeg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Curug Larangan</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Manik.jpeg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Curug Puncak Manik</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Darmaa.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Puncak Darma</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Aher.jpeg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Puncak aher</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Sunset.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Bukit Sunset Hill</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Durian.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Bukit Durian Sagara</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Ciptagelar.jpg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Kasepuhan Ciptagelar</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Sinarresmi.jpeg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Kampung Adat Sinarresmi</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Ciptarasa.jpeg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Kampung Adat Cipta Rasa</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="data-item">
+            <img src="asset/Megalodon.jpeg" alt="Cisolok" style="width: 100px;">
+          <div class="description">
+            <h3>Museum Megalodon</h3>
+          </div>
+        </div>
+      </div>
+      
+
+  <!-- Author Section -->
+  <div id="author-section">
+    <div class="author-content">
+      <h2>Tentang Pembuat</h2>
+      <img src="asset/rian hidayat.jpg" alt="rian hidayat" style="width:150px; height:auto; border-radius: 50%; margin: 20px auto; display: block;">
+      <div class="author-name">
+        <h3>Rian Hidayat, S.Geo</h3>
+        <h3>Kabupaten Sukabumi</h3>
+      <div class="deskripsi">
+      <p>Seorang Mahasiswa Program Studi Sains Informasi Geografi di Universitas Pendidikan Indonesia, asal Desa Mekarsari, Kecamatan Ciracap, Kabupaten Sukabumi. 
+        Telah menghabiskan dua tahun merantau dan menimba ilmu di Kota Bandung, sembari mengukir berbagai pengalaman luar biasa dalam dunia akademik dan organisasi.
+        Memiliki keahlian dalam Sistem Informasi Geografis (SIG), Penginderaan Jauh, WebGIS, serta beragam teknologi geospasial lainnya. Aktif berkontribusi dalam Himpunan Mahasiswa Sains Informasi Geografi, dengan semangat kolaboratif dan visi kuat untuk terus berinovasi.
+        Berkomitmen untuk mengembangkan dan menerapkan teknologi spasial sebagai solusi strategis dalam perencanaan wilayah, pelestarian lingkungan, serta penanggulangan bencana berbasis data.</p>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="footer-content">
+      <h3>Hubungi Saya</h3>
+      <p>Alamat: Desa Mekarsari, Kecamatan Ciracap, Kabupaten Sukabumi</p>
+      <p>Email: rianhdyt2509@gmail.com</p>
+      <p>WhatsApp: +628559809389</p>
+      <p>Instagram: @rianhdyt_25</p>
+    </div>
+  </div>
+  <!-- Leaflet CSS -->
+                <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+                <!-- Leaflet Fullscreen Plugin CSS -->
+                <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen/Control.FullScreen.css" />
+                <script src="https://unpkg.com/leaflet.fullscreen/Control.FullScreen.js"></script>
+
+                <!-- Leaflet Locate Control CSS -->
+                <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+
+                <!-- Pastikan semua file JavaScript dimuat sebelum penutup body -->
+                <script src="js/script.js"></script>
+</body>
+</html>
